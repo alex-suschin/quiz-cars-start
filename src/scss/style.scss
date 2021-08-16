@@ -607,6 +607,44 @@ header.header-show {
 }
 
 @media screen and (max-width: 735px) {
+    .info-mobile .logo-text {
+        margin-bottom: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #000;
+    }
+    .logo-text b {
+        display: block;
+        font-size: 13px;
+        line-height: 100%;
+        color: #000;
+        margin-bottom: 0;
+        font-weight: 300;
+        margin-right: 13px;
+    }
+    .logo-text span {
+        white-space: nowrap;
+        display: block;
+        font-size: 13px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 300;
+    }
+    .address-phone span {
+        display: block;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 135%;
+        text-align: right;
+        color: #000;
+    }
     .info-mobile {
         padding: 0 16px;
         margin-bottom: 16px;
@@ -661,6 +699,15 @@ header.header-show {
     .btns {
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 0;
+    }
+    .btns-city {
+        width: 100%;
+        flex-direction: row;
+    }
+    .btns-marks {
+        width: 100%;
+        flex-direction: row;
     }
     .btns label:first-child {
         margin-right: 0;
