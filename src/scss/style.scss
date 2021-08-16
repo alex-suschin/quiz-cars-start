@@ -240,7 +240,6 @@ header.header-show {
     background: #FFFFFF;
     box-shadow: 0px 33px 55px rgba(209, 227, 237, 0.33);
     border-radius: 10px;
-    margin-bottom: 39px;
     transition: height 100ms ease, transform 700ms ease, opacity 700ms ease;
     background: rgba(255, 255, 255, 0.75);
     transform: translateY(300px) scale(0.9);
@@ -263,6 +262,7 @@ header.header-show {
     visibility: hidden;
     transform: translateX(-25px);
     display: flex;
+    flex-wrap: wrap;
     display: none;
     justify-content: flex-start;
     align-items: flex-start;
@@ -272,6 +272,17 @@ header.header-show {
     -moz-transform: translateX(-25px);
     -ms-transform: translateX(-25px);
     -o-transform: translateX(-25px);
+}
+
+.message-item.message-y {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: translateX(25px);
+    -webkit-transform: translateX(25px);
+    -moz-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    -o-transform: translateX(25px);
 }
 
 .message-item.visF {
@@ -299,7 +310,7 @@ header.header-show {
         display: block;
         width: 9px;
         height: 9px;
-        background: #61E438;
+        background: #9FFFDD;
         position: absolute;
         bottom: 4px;
         right: 7px;
@@ -320,7 +331,7 @@ header.header-show {
 }
 
 .name {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     line-height: 100%;
     color: #000000;
@@ -332,12 +343,12 @@ header.header-show {
 }
 
 .message-text {
-    max-width: 577px;
+    max-width: 510px;
     width: 100%;
     padding: 18px 25px 18px 25px;
     font-weight: normal;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 160%;
     color: #000000;
     text-align: left;
     background: #FFFFFF;
@@ -346,109 +357,11 @@ header.header-show {
     border-radius: 0px 16px 16px 16px;
 }
 
-.cars {
-    width: 100%;
-    padding: 15px 0 0 79px;
-    display: flex;
-    display: none;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.cars.visF {
-    display: flex;
-}
-
-.car-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    margin-right: 103px;
-    height: 190px;
-    margin-bottom: 30px;
-    padding: 16px 17px 16px 17px;
-    max-width: 160px;
-    width: 100%;
-    box-shadow: 0px 12px 21px rgba(147, 181, 206, 0.16);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    @include tr2;
-    cursor: pointer;
-    z-index: 5;
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
-    &:hover,
-    &.active {
-        background: $color;
-        box-shadow: 0px 12px 22px rgba(255, 244, 94, 0.5);
-    }
-}
-
-.car-item input {
-    display: none;
-}
-
-.car-item__title {
-    @include tr2;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000;
-    margin-bottom: 8px;
-}
-
-.car-item__img {
-    min-width: 232px;
-    max-width: 232px;
-    min-height: 116px;
-    width: max-content;
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 126px;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-.car-item__price {
-    @include tr2;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-    color: #000;
-    text-align: left;
-}
-
-// .car-item:hover .car-item__title,
-// .car-item:hover .car-item__price,
-// .car-item.active .car-item__title,
-// .car-item.active .car-item__price {
-//     color: #fff;
-// }
 .message-y {
     align-self: flex-end;
     .message-text {
         background: #1F77FC;
-        color: #000;
+        color: #fff;
         border-radius: 16px 0px 16px 16px;
         -webkit-border-radius: 16px 0px 16px 16px;
         -moz-border-radius: 16px 0px 16px 16px;
@@ -468,15 +381,18 @@ header.header-show {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 22px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 82px;
     label {
+        margin-right: 12px;
+        margin-bottom: 12px;
         white-space: nowrap;
         transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
         cursor: pointer;
         display: block;
-        padding: 10px 20px 10px 20px;
+        padding: 14px 25px 14px 25px;
         background: #EBEBEB;
-        border-radius: 10px;
         box-sizing: border-box;
         font-weight: normal;
         font-size: 14px;
@@ -487,6 +403,11 @@ header.header-show {
         -moz-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
         -ms-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
         -o-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
         &:first-child {
             margin-right: 16px;
         }
@@ -507,56 +428,111 @@ header.header-show {
     width: 100%;
 }
 
-.form-request {
-    input {
-        max-width: 254px;
-        width: 100%;
-    }
-}
-
-.agree {
-    margin-top: 15px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-    color: #747474;
-    margin-bottom: 15px;
-    a {
+.btns-buy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 82px;
+    label {
+        margin-right: 0;
+        margin-bottom: 0;
+        white-space: nowrap;
+        transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        cursor: pointer;
+        display: block;
+        padding: 14px 25px 14px 25px;
+        background: #F3F9FC;
+        border-radius: 16px;
+        box-sizing: border-box;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 100%;
-        color: #747474;
-        text-decoration: underline;
-        &:hover {
-            text-decoration: none;
+        text-align: center;
+        color: #000;
+        -webkit-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:first-child {
+            margin-bottom: 12px;
+        }
+        &:hover,
+        &.active {
+            background: #1F77FC;
+            color: #fff;
         }
     }
 }
 
-.butphone {
-    display: block;
-    max-width: 254px;
-    width: 100%;
-    margin-top: 20px;
-    background: #1F77FC;
-    color: #000;
-    font-family: inherit;
-    font-size: 17px;
-    border-radius: 16px;
-    padding: 16px 0 15px 0;
-    border: 0;
-    cursor: default;
-    transition: all 200ms ease;
-    opacity: 0;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+.btns-buy input {
+    display: none;
 }
 
-.butphoneshow {
-    cursor: pointer;
-    opacity: 1;
+.btns-buy span {
+    display: block;
+    width: 100%;
+}
+
+.btns-marks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 77%;
+    margin-top: 20px;
+    margin-left: 82px;
+    label {
+        margin-right: 12px;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        height: 52px;
+        padding: 0 18px 0 18px;
+        background: #F3F9FC;
+        border-radius: 16px;
+        box-sizing: border-box;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 100%;
+        border: 1px solid transparent;
+        text-align: center;
+        color: #000;
+        -webkit-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:first-child {
+            margin-bottom: 12px;
+        }
+        img {
+            margin-right: 20px;
+        }
+        &:hover,
+        &.active {
+            border-color: #1F77FC;
+            background: #fff;
+            color: #000000;
+        }
+    }
+}
+
+.btns-marks input {
+    display: none;
+}
+
+.btns-marks span {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
     width: 100%;
 }
 
@@ -566,6 +542,18 @@ header.header-show {
 
 .message-m .message-text {
     line-height: 160%;
+}
+
+.btns-city {
+    width: 63%;
+    flex-wrap: wrap;
+    label {
+        background: #F3F9FC;
+    }
+}
+
+.btns-checked {
+    pointer-events: none;
 }
 
 
@@ -600,15 +588,6 @@ header.header-show {
     }
 }
 
-@media screen and (max-width: 930px) {
-    .cars {
-        padding: 15px 0 0 15px;
-    }
-    .car-item {
-        margin-right: 70px;
-    }
-}
-
 @media screen and (max-width: 850px) {
     .phone-worktime {
         padding: 0;
@@ -627,18 +606,6 @@ header.header-show {
     }
 }
 
-@media screen and (max-width: 775px) {
-    .car-item {
-        margin-right: 150px;
-    }
-    .car-item:nth-child(3n) {
-        margin-right: 150px;
-    }
-    .car-item:nth-child(2n) {
-        margin-right: 0;
-    }
-}
-
 @media screen and (max-width: 735px) {
     .info-mobile {
         padding: 0 16px;
@@ -650,20 +617,6 @@ header.header-show {
             margin-left: 0;
             color: #000;
         }
-        .logo-text {
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            color: #000;
-            span {
-                color: #000;
-            }
-            b {
-                color: #000;
-                margin-right: 13px;
-            }
-        }
         .address-phone span {
             color: #000;
         }
@@ -671,14 +624,8 @@ header.header-show {
     .content {
         padding: 15px 0 0 0;
     }
-    header .logo-text {
-        display: none;
-    }
     header .address-phone span {
         display: none;
-    }
-    .logo-text b {
-        margin-bottom: 0;
     }
     .address-phone span {
         font-size: 11px;
@@ -702,16 +649,6 @@ header.header-show {
     .message-box {
         padding: 45px 20px 50px 20px;
     }
-    .exs-items {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .exs-item {
-        margin-right: 0;
-        width: 45%;
-        margin-bottom: 45px;
-    }
     .content h1 br {
         display: none;
     }
@@ -720,26 +657,7 @@ header.header-show {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .cars {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .car-item:nth-child(3n) {
-        margin-right: 0;
-    }
-    .car-item {
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
 @media screen and (max-width: 500px) {
-    .form-request {
-        margin: 0 0 0 -54px;
-    }
     .btns {
         flex-direction: column;
         align-items: flex-start;
@@ -754,26 +672,8 @@ header.header-show {
     header {
         padding: 20px 0;
     }
-    .exs-item {
-        width: 100%;
-        text-align: left;
-        justify-content: flex-start;
-    }
     .content h1 {
         font-size: 24px;
-    }
-    .exs-item__text {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 120%;
-        text-transform: uppercase;
-        color: #494949;
-    }
-    .exs-item {
-        margin-bottom: 16px;
-    }
-    .exs-items {
-        margin-bottom: 10px;
     }
     .head-title span {
         font-size: 12px;
@@ -793,14 +693,6 @@ header.header-show {
     .btns a {
         flex-shrink: 0;
         padding: 10px 10px 10px 10px;
-    }
-    .form-request input {
-        padding: 0 15px;
-    }
-    .agree {
-        margin: 0 -39px;
-        margin-bottom: 18px;
-        margin-top: 18px;
     }
 }
 

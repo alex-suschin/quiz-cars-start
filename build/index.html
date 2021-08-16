@@ -57,20 +57,20 @@
                 <h1>Онлайн помошник в подборе автомобиля<br> по выгодной цене</h1>
 
                 <div class="message-box">
-                    <div class="message-item message-m" data-delay-text="200" data-delay="1500">
+                    <div class="message-item messag-elem message-m" data-delay-text="200" data-delay="1500">
                         <div class="avatar"><img src="img/manager.jpg" alt=""></div>
                         <div class="message-info">
                             <div class="name">Виктор</div>
                             <div class="message-text">Здравствуйте! Меня зовут Виктор. Я представитель ГК РИНГ</div>
                         </div>
                     </div>
-                    <div class="message-item message-m" data-delay-text="1900" data-delay="3200">
+                    <div class="message-item messag-elem message-m" data-delay-text="1900" data-delay="3200">
                         <div class="avatar"><img src="img/manager.jpg" alt=""></div>
                         <div class="message-info">
-                            <div class="name">Алексей</div>
+                            <div class="name">Виктор</div>
                             <div class="message-text">Подскажите что вас интересует</div>
                         </div>
-                        <div class="btns">
+                        <div class="btns btns-buy">
                             <label>
                                 <input type="radio" name="var-buy" value="Покупка нового авто">
                                 <span>Покупка нового авто</span>
@@ -82,107 +82,166 @@
                         </div>
                     </div>
 
-                    <div class="cars" data-delay="5200">
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault ARKANA">
-                            <div class="car-item__title">ARKANA</div>
-                            <div class="car-item__img"><img src="img/arkana.png" alt=""></div>
-                            <div class="car-item__price">от 1 286 000 ₽</div>
-                        </label>
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault kaptur">
-                            <div class="car-item__title">kaptur</div>
-                            <div class="car-item__img"><img src="img/captur.png" alt=""></div>
-                            <div class="car-item__price">от 1 206 000 ₽</div>
-                        </label>
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault duster">
-                            <div class="car-item__title">duster</div>
-                            <div class="car-item__img"><img src="img/duster.png" alt=""></div>
-                            <div class="car-item__price">от 1 004 000 ₽</div>
-                        </label>
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault sandera stepway">
-                            <div class="car-item__title">sandera stepway</div>
-                            <div class="car-item__img"><img src="img/sandero-stepway.png" alt=""></div>
-                            <div class="car-item__price">от 906 000 ₽</div>
-                        </label>
-
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault sandero">
-                            <div class="car-item__title">sandero</div>
-                            <div class="car-item__img"><img src="img/sandero.png" alt=""></div>
-                            <div class="car-item__price">от 743 000 ₽</div>
-                        </label>
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault logan stepway">
-                            <div class="car-item__title">logan stepway</div>
-                            <div class="car-item__img"><img src="img/logan-stepway.png" alt=""></div>
-                            <div class="car-item__price">от 864 000 ₽</div>
-                        </label>
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault sandera stepway">
-                            <div class="car-item__title">sandera stepway</div>
-                            <div class="car-item__img"><img src="img/sandero-stepway.png" alt=""></div>
-                            <div class="car-item__price">от 718 000 ₽</div>
-                        </label>
-                        <label class="car-item">
-                            <input type="radio" name="car-check" value="Renault MASTER">
-                            <div class="car-item__title">MASTER</div>
-                            <div class="car-item__img"><img src="img/master.png" alt=""></div>
-                            <div class="car-item__price">от 2 255 000 ₽</div>
-                        </label>
-                    </div>
-
-                    <div class="message-item message-y js-message--check-car">
+                    <div class="message-item messag-elem message-y js-message--check-car">
                         <div class="message-info">
                             <div class="name">Вы</div>
                             <div class="message-text"></div>
                         </div>
                     </div>
-                    <div class="message-item message-m js-money-check">
+
+                    <div class="message-item messag-elem message-m">
                         <div class="avatar"><img src="img/manager.jpg" alt=""></div>
                         <div class="message-info">
-                            <div class="name">Алексей</div>
-                            <div class="message-text">Как планируете приобретать автомобиль?</div>
-                            <div class="btns">
-                                <label>
-                                    <input type="radio" name="money-input" value="Наличными">
-                                    <span>Наличными</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="money-input" value="В кредит">
-                                    <span>В кредит</span>
-                                </label>
-                            </div>
+                            <div class="name">Виктор</div>
+                            <div class="message-text">В каком городе вы хотите приобрести авто?</div>
+                        </div>
+                        <div class="btns btns-city">
+                            <label>
+                                <input type="radio" name="city" value="Воронеж">
+                                <span>Воронеж</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="city" value="Старый Оскол">
+                                <span>Старый Оскол</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="city" value="Тамбов">
+                                <span>Тамбов</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="city" value="Курск">
+                                <span>Курск</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="city" value="Липецк">
+                                <span>Липецк</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="city" value="Белгород">
+                                <span>Белгород</span>
+                            </label>
                         </div>
                     </div>
-                    <div class="message-item message-y js-message--check-money">
+
+                    <div class="message-item messag-elem message-y js-message--check-car">
                         <div class="message-info">
                             <div class="name">Вы</div>
                             <div class="message-text"></div>
                         </div>
                     </div>
-                    <div class="message-item message-m js-final-message">
+
+                    <div class="message-item messag-elem message-m js-money-check">
                         <div class="avatar"><img src="img/manager.jpg" alt=""></div>
                         <div class="message-info">
-                            <div class="name">Алексей</div>
-                            <div class="message-text">Отлично! Наш менеджер свяжется с Вами, уточнит детали и сделает предложение на покупку Renault с учетом максимальной выгоды.</div>
-                            <div class="agree">Продолжая, вы соглашаетесь с <a href="#">политикой конфиденциальности Renault</a></div>
-                            <form action="/" method="post" class="form-request">
-                                <input type="tel" class="inpphone" placeholder="+7   ___-___-__-__">
-                                <button type="submit" class="butphone">Отправить</button>
-                                <div class="error errorphone" style="display: none;"></div>
-                            </form>
+                            <div class="name">Виктор</div>
+                            <div class="message-text">Какую марку автомобиля вы рассматриваете?<br> Выберите марку автомобиля из списка, нажав на нее:</div>
+                        </div>
+                        <div class="btns btns-marks">
+                            <label>
+                                <input type="radio" name="mark-input" value="Genesis">
+                                <img src="img/genesis-logo.svg" alt="">
+                                <span>Genesis</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Chevrolet">
+                                <img src="img/chevrolet-logo.svg" alt="">
+                                <span>Chevrolet</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Renault">
+                                <img src="img/renault-logo.svg" alt="">
+                                <span>Renault</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Hyundai">
+                                <img src="img/hyundai-logo.svg" alt="">
+                                <span>Hyundai</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Mazda">
+                                <img src="img/mazda-logo.svg" alt="">
+                                <span>Mazda</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Škoda">
+                                <img src="img/skoda-logo.svg" alt="">
+                                <span>Škoda</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Audi">
+                                <img src="img/audi-logo.svg" alt="">
+                                <span>Audi</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Nissan">
+                                <img src="img/nissan-logo.svg" alt="">
+                                <span>Nissan</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Suzuki">
+                                <img src="img/suzuki-logo.svg" alt="">
+                                <span>Suzuki</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Genesis">
+                                <img src="img/genesis-logo.svg" alt="">
+                                <span>Genesis</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Datsun">
+                                <img src="img/datsun-logo.svg" alt="">
+                                <span>Datsun</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Volkswagen">
+                                <img src="img/volkswagen-logo.svg" alt="">
+                                <span>Volkswagen</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="KIA">
+                                <img src="img/kia-logo.svg" alt="">
+                                <span>KIA</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Ford">
+                                <img src="img/ford-logo.svg" alt="">
+                                <span>Ford</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Citroën">
+                                <img src="img/citroen-logo.svg" alt="">
+                                <span>Citroën</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Haval">
+                                <img src="img/haval-logo.svg" alt="">
+                                <span>Haval</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="mark-input" value="Geely">
+                                <img src="img/geely-logo.svg" alt="">
+                                <span>Geely</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="message-item messag-elem message-y js-message--check-money">
+                        <div class="message-info">
+                            <div class="name">Вы</div>
+                            <div class="message-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="message-item messag-elem message-m js-final-message">
+                        <div class="avatar"><img src="img/manager.jpg" alt=""></div>
+                        <div class="message-info">
+                            <div class="name">Виктор</div>
+                            <div class="message-text">Спасибо за ответы. Переключаю Вас на онлайн подбор автомобиля Volkswagen в городе Воронеж.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="container"></div>
-        </footer>
     </div>
 
     <script src="js/vendor.min.js"></script>
